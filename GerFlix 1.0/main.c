@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "Serie.h"
 #include "Usuario.h"
 #define TAMSERIE 20
 #define TAMUSUARIO 100
-
+// viernes Altas Bajas Modificaciones de Usuarios y Series
+// alta de usuarios.. doy de alta usuario, muestro todas la series que hay y el usuario elige una -1 -2 -3
 
 int main()
 {
@@ -18,6 +18,10 @@ int main()
 
     mostrarListaSeries(listaDeSeries,TAMSERIE);
     mostrarListaUsuarios(listaDeUsuarios, TAMUSUARIO);
+
+    mostrarUsuariosConSerie(listaDeUsuarios, TAMUSUARIO, listaDeSeries, TAMSERIE);
+
+    //mostrarUsuarioConSerie(listaDeUsuarios, TAMUSUARIO, listaDeSeries, TAMSERIE);
 
 
     /*

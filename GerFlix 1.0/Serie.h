@@ -13,3 +13,4 @@ void inicializarSeriesHardCode(eSerie[]);
 void mostrarListaSeries(eSerie[], int);
 void mostrarSerie(eSerie serie);
 
+

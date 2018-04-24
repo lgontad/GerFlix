@@ -52,24 +52,28 @@ void mostrarListaUsuarios(eUsuario listado[], int TAMUSUARIO)
         }
     }
 }
-/*
-/*void UsuariosConSerie (eUsuario usuario, eSerie serie)
-{
-    int aux_serie;
-    int aux_usuario;
-    char aux_nombre[50];
 
-    for(int i=0;i<15-1;i++) // usuario
+void mostrarUsuariosConSerie (eUsuario usuarios[], int cantidadUsuarios, eSerie serie[], int cantidadSeries)
+{
+    int i;
+    int j;
+
+    for(int i=0;i<cantidadUsuarios;i++) // usuario
     {
-        //mostrar datos de usuario
-        for(int j=i+1;j<5 ;j++) // serie
+        if(usuarios[i].estado == 1)
         {
-            if(serie[i] = idserie[j])
+        printf("%3d %10s ", usuarios[i].idUsuario, usuarios[i].nombre); // muestro datos de usuario
+        for(int j=0;j<cantidadSeries;j++) // serie
+          {
+
+            if(serie[j].estado == 1 && usuarios[i].idSerie == serie[j].idSerie) // verifico que estado de serie no sea 0, tenga datos
             {
-                //mostrar datos serie
-                //break;
+                printf("%s", serie[j].nombre);
+                break;//mostrar datos serie
             }
+          }
+          printf("\n");
         }
     }
+
 }
-*/
