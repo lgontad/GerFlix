@@ -51,11 +51,14 @@ void mostrarSerie(eSerie serie )
 }
 
 
-void mostrarListaSeries(eSerie listado[])
+void mostrarListaSeries(eSerie listado[],int TAMSERIE)
 {
     int i;
-    for (i = 0; i <5; i++)
+    for (i = 0; i<TAMSERIE; i++)
     {
+        if (listado[i].estado == 1)
+        {
         mostrarSerie (listado[i]);
+        }
     }
 }

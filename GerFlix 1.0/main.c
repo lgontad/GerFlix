@@ -16,8 +16,8 @@ int main()
     inicializarUsuariosEstado(listaDeUsuarios,TAMUSUARIO);
     inicializarUsuariosHardCode(listaDeUsuarios);
 
-    mostrarListaSeries(listaDeSeries);
-    mostrarListaUsuarios(listaDeUsuarios);
+    mostrarListaSeries(listaDeSeries,TAMSERIE);
+    mostrarListaUsuarios(listaDeUsuarios, TAMUSUARIO);
 
 
     /*

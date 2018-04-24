@@ -17,7 +17,7 @@ void inicializarUsuariosHardCode(eUsuario usuarios[])
     int id[15] = {1000,1001,1002,1003,1004, 1005,1006,1007,1008,1009, 1010,1011,1012,1013,1014};
     char nombre[][50]={"Juan","Maria","Pedro","Vanesa","Jose","Luisa","Laura","Marcelo","German","Victoria","Dafne","Antonela","Gisele","Dario","Pedro"};
 
-    int serie[15] = {100,100,101,101,102,100,100,103,101,102,103,105,105,100,103};
+    int serie[15] = {100,100,101,101,102,100,100,103,101,102,103,104,104,100,103};
 
 
 
@@ -38,16 +38,38 @@ void mostrarUsuario(eUsuario usuario )
 {
     printf("\nId: %d", usuario.idUsuario);
     printf("\nNombre: %s", usuario.nombre);
-    printf("\nSerie: %d", usuario.idSerie);
 
 }
 
-
-void mostrarListaUsuarios(eUsuario listado[])
+void mostrarListaUsuarios(eUsuario listado[], int TAMUSUARIO)
 {
     int i;
-    for (i = 0; i <15; i++)
+    for (i = 0; i <TAMUSUARIO; i++)
     {
+        if(listado[i].estado == 1)
+        {
         mostrarUsuario(listado[i]);
+        }
     }
 }
+/*
+/*void UsuariosConSerie (eUsuario usuario, eSerie serie)
+{
+    int aux_serie;
+    int aux_usuario;
+    char aux_nombre[50];
+
+    for(int i=0;i<15-1;i++) // usuario
+    {
+        //mostrar datos de usuario
+        for(int j=i+1;j<5 ;j++) // serie
+        {
+            if(serie[i] = idserie[j])
+            {
+                //mostrar datos serie
+                //break;
+            }
+        }
+    }
+}
+*/
