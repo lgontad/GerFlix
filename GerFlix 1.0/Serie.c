@@ -41,3 +41,21 @@ void inicializarSeriesHardCode(eSerie series[])
     }
 }
 
+
+void mostrarSerie(eSerie serie )
+{
+    printf("\nId: %d", serie.idSerie);
+    printf("\nNombre: %s", serie.nombre);
+    printf("\nGenero: %s", serie.genero);
+    printf("\nCantidad Temporadas: %d", serie.cantidadTemporadas);
+}
+
+
+void mostrarListaSeries(eSerie listado[])
+{
+    int i;
+    for (i = 0; i <5; i++)
+    {
+        mostrarSerie (listado[i]);
+    }
+}

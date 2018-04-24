@@ -32,3 +32,22 @@ void inicializarUsuariosHardCode(eUsuario usuarios[])
 
     }
 }
+
+
+void mostrarUsuario(eUsuario usuario )
+{
+    printf("\nId: %d", usuario.idUsuario);
+    printf("\nNombre: %s", usuario.nombre);
+    printf("\nSerie: %d", usuario.idSerie);
+
+}
+
+
+void mostrarListaUsuarios(eUsuario listado[])
+{
+    int i;
+    for (i = 0; i <15; i++)
+    {
+        mostrarUsuario(listado[i]);
+    }
+}

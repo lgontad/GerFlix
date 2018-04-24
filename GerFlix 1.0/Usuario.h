@@ -9,4 +9,5 @@ typedef struct
 
 void inicializarUsuariosEstado(eUsuario[], int);
 void inicializarUsuariosHardCode(eUsuario[]);
-void mostrarListaUsuarios(eUsuario[], int);
+void mostrarListaUsuarios(eUsuario listado[]);
+void mostrarUsuario (eUsuario usuario);
