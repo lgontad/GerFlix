@@ -16,12 +16,12 @@
 1524580030 source:c:\test\scarafilo\gerflix 1.0\usuario.c
 	"Usuario.h"
 
-1524845598 source:c:\users\lgontad\documents\mios\carrera programacion\gerflix\gerflix 1.0\main.c
+1524852999 source:c:\users\lgontad\documents\mios\carrera programacion\gerflix\gerflix 1.0\main.c
 	<stdio.h>
 	<stdlib.h>
 	"Usuario.h"
 
-1524851633 c:\users\lgontad\documents\mios\carrera programacion\gerflix\gerflix 1.0\usuario.h
+1524852999 c:\users\lgontad\documents\mios\carrera programacion\gerflix\gerflix 1.0\usuario.h
 	"Serie.h"
 
 1524842088 c:\users\lgontad\documents\mios\carrera programacion\gerflix\gerflix 1.0\serie.h
@@ -30,6 +30,9 @@
 	"Serie.h"
 	<string.h>
 
-1524845542 source:c:\users\lgontad\documents\mios\carrera programacion\gerflix\gerflix 1.0\usuario.c
+1524853302 source:c:\users\lgontad\documents\mios\carrera programacion\gerflix\gerflix 1.0\usuario.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
 	"Usuario.h"
 

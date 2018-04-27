@@ -20,7 +20,7 @@ int main()
     mostrarListaUsuarios(listaDeUsuarios, TAMUSUARIO);
 
     mostrarUsuariosConSerie(listaDeUsuarios, TAMUSUARIO, listaDeSeries, TAMSERIE);
-    mostrarListaSeriePorUsuario(listaDeSeries, TAMSERIE, listaDeUsuarios, TAMUSUARIO);
+    mostrarSerieConSuUsuario(listaDeSeries, TAMSERIE, listaDeUsuarios, TAMUSUARIO);
 
 
     //mostrarUsuarioConSerie(listaDeUsuarios, TAMUSUARIO, listaDeSeries, TAMSERIE);

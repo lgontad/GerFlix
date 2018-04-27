@@ -80,31 +80,32 @@ void mostrarUsuariosConSerie (eUsuario usuarios[], int cantidadUsuarios, eSerie 
     }
 
 }
-void mostrarListaSeriePorUsuario(eSerie serie[],int cantidadSeries, eUsuario usuario[], int cantidadUsuarios)
+void mostrarSerieConSuUsuario(eSerie serie[],int cantidadSeries, eUsuario usuario[], int cantidadUsuarios)
 {
     int i;
     int j;
 
-    for(i=0 ; i<cantidadUsuarios ; i++)
+    for(i=0 ; i<cantidadSeries ; i++)
     {
-        if(usuario[i].estado == 1)
+        if(serie[i].estado == 1)
         {
-            printf("%3s %10s ", usuario[i].nombre);
 
-            for(j=0 ; j<cantidadSeries ; j++)
+            for(j=0 ; j<cantidadUsuarios ; j++)
             {
-                if(serie[j].estado == 1 &&
-                   serie[j].idSerie == usuario[i].idSerie)
+                if(usuario[j].estado == 1 && serie[i].estado == 1 &&
+                   serie[i].idSerie == usuario[j].idSerie)
                 {
-                    printf("%s", serie[i].nombre);
-                    break;
+                    printf("%10s " " %3s \n",serie[i].nombre, usuario[j].nombre);
                 }
             }
         }
     }
 }
 
-eUsuario altaDeUsuario()
+
+
+
+/*eUsuario altaDeUsuario()
 {
     eUsuario retorno;
     do
@@ -133,3 +134,4 @@ eUsuario altaDeUsuario()
 
     return retorno;
 }
+*/
