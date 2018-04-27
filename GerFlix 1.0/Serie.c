@@ -58,7 +58,7 @@ void mostrarListaSeries(eSerie listado[],int TAMSERIE)
     {
         if (listado[i].estado == 1)
         {
-        mostrarSerie (listado[i]);
+        mostrarSerie(listado[i]);
         }
     }
 }

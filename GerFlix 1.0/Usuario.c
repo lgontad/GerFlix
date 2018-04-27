@@ -1,5 +1,8 @@
-
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 #include "Usuario.h"
+
 
 void inicializarUsuariosEstado(eUsuario usuarios[], int cant)
 {
@@ -76,4 +79,57 @@ void mostrarUsuariosConSerie (eUsuario usuarios[], int cantidadUsuarios, eSerie 
         }
     }
 
+}
+void mostrarListaSeriePorUsuario(eSerie serie[],int cantidadSeries, eUsuario usuario[], int cantidadUsuarios)
+{
+    int i;
+    int j;
+
+    for(i=0 ; i<cantidadUsuarios ; i++)
+    {
+        if(usuario[i].estado == 1)
+        {
+            printf("%3s %10s ", usuario[i].nombre);
+
+            for(j=0 ; j<cantidadSeries ; j++)
+            {
+                if(serie[j].estado == 1 &&
+                   serie[j].idSerie == usuario[i].idSerie)
+                {
+                    printf("%s", serie[i].nombre);
+                    break;
+                }
+            }
+        }
+    }
+}
+
+eUsuario altaDeUsuario()
+{
+    eUsuario retorno;
+    do
+    {
+        printf("\nIngrese nombre del usuario: ");
+        fflush(stdin);
+        gets(retorno.nombre);
+        if(strcmp(retorno.nombre, "") == 0)
+        {
+            printf("\nDebe ingresar el nombre del usuario");
+        }
+    } while(strcmp(retorno.nombre, "") == 0);
+    do
+        {
+            mostrarListaSeries(listado[], TAMSERIE);
+            printf("\nIngrese ID de la serie que ve el Usuario: ");
+            scanf("%d", &listaDeUsuarios[posicionDeIngreso].idSerie);
+            serieExistente = existeSerie(listaDeSeries, listaDeUsuarios[posicionDeIngreso].idSerie, TAMSERIE);
+            if(serieExistente == 0)
+            {
+                printf("\nEl ID ingresado no existe. Por favor vuelva a ingresar el dato");
+            }
+        } while(serieExistente == 0);
+
+    retorno.estado = 1;
+
+    return retorno;
 }
